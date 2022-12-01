@@ -48,14 +48,6 @@ def update_location(data):
 	    currentHeading = math.atan2(currentY - referY, currentX - referX)
 	    referX = currentX
 	    referY = currentY
-    # current47_ang = math.atan2(currentY_47, currentX_47)
-    # current73_ang = math.atan2(currentY_73, currentX_73)
-    # if (current73_ang < 0) or (current47_ang < 0):
-        # current73_ang += 2*math.pi
-        # current47_ang += 2*math.pi
-    # currentHeading = (current47_ang + current73_ang) / 2
-    # if (current47_ang > current73_ang):
-        # currentHeading += math.pi
     if (currentHeading < 0):
         currentHeading += 2*math.pi
     while (currentHeading > 2*math.pi):
