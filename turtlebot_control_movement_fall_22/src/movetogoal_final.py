@@ -3,7 +3,6 @@ import rospy
 from marvelmind_nav.msg import hedge_imu_fusion,hedge_pos_ang
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
-import numpy as np
 import math
 import time
 import json
